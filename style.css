@@ -24,7 +24,7 @@
 
 .rescard{
     width: 200px;
-    
+    margin: 2px;
     padding: 1px;
     word-wrap: break-word;
     overflow: hidden;
