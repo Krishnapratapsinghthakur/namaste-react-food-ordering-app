@@ -30,13 +30,17 @@
     overflow: hidden;
     border: 1px solid black;
     
-    background-color: aquamarine;
+    background-color: rgb(217, 233, 227);
+    padding: 2px;
+}
+.rescard:hover{
+    border: 2px solid black;
 }
 .resimg{
     width: 200;
     height: 100;
 }
-.search{
+.feature{
     padding: 10px;
     font-size: 20px;
 }
@@ -50,4 +54,25 @@
     padding: 1px;
     display: flex;
     flex-wrap: wrap;
+}
+
+
+.shimmer{
+    width: 200px;
+    height: 300px;
+    margin: 2px;
+    padding: 1px;
+    word-wrap: break-word;
+    overflow: hidden;
+    border: 1px solid black;
+    
+    background-color: aquamarine;
+}
+.shimmerdiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.searchbtn{
+    margin: 10px;
+   
 }
