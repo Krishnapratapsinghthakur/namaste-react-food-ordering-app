@@ -17,6 +17,7 @@ const ResCard=(props)=>{
         <div className="rescard">
         <img className="resimg" src={cdn_url+resdata.info.cloudinaryImageId}/>
         <h4>{name}</h4>
+        <h4>{resdata.info.resId}</h4>
         <h3>{cuisines.join(",")} </h3>
         <h3>{avgRating}</h3>
         <h3>{deliveryTime}</h3>

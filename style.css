@@ -76,3 +76,16 @@
     margin: 10px;
    
 }
+.resitemimg{
+    height: 200px;
+    width: 200px;
+}
+.resitem{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.resitem >ul>li{
+    word-wrap: break-word;
+    list-style-type:none;
+}

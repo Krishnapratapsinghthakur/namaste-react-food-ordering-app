@@ -2,6 +2,7 @@ import ResCard from "./Rescard";
 
 import {useState,useEffect} from 'react'
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 
 
@@ -23,7 +24,7 @@ const ResContainer=()=>{
 
     // console.log(json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     const apirestaurants = json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    // console.log(apirestaurants)
+    console.log(apirestaurants)
     setrestraunts1(apirestaurants)
     setrestraunts(apirestaurants)
     // json.data.cards[1].card.card.girdElements.infoWithStyle.restaurants
@@ -94,10 +95,23 @@ const ResContainer=()=>{
 
         </div>
         <div className="rescontainer">
+  {restraunts1.map((restraun) => (
+    <Link to={"restaurent/" + restraun.info.id} key={restraun.info.id}>
+      <ResCard resdata={restraun} />
+    </Link>
+  ))}
+</div>
 
-            {restraunts1.map(restraun=>(<ResCard key={restraun.info.id} resdata= {restraun} />))}
+        
+        
+        
+        
+        
+        {/* <div className="rescontainer">
+
+            {restraunts1.map(restraun=> (<Link to={"restaurent/" + restraun.info.id}><ResCard key={restraun.info.id} resdata= {restraun} />))}
           
-            </div>
+            </div> */}
         </div>
     )
 }
